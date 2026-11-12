@@ -1,0 +1,5 @@
+# Data amount without the training-length confound: 10k samples x 4 epochs = 2,500 optimizer steps,
+# the same number of steps (and the same cosine schedule length) as R1 with 40k x 1 epoch.
+_base_: [r1_6cam.yaml]
+exp: r1_10k_4ep
+train: {enabled: true, max_train: 10000, epochs: 4}

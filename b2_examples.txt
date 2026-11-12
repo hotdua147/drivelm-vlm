@@ -1,0 +1,119 @@
+
+######## P1
+Q   : What are the important objects in the current scene? Those objects will be considered for the future reasoning and drivi
+GT  : There is a silver car to the back of the ego vehicle, a gray sedan to the front left of the ego vehicle, and a pedestrian preparing to cross the road  | label: None
+PRED: The important objects in the current scene are: / - A person standing on the left side of the road, near a grassy area. / - A building with a curved roof and glass windows, located in the background. / - A large building with a blue and white facade, situated on the right side of the road. / - A silver car 
+READ: []
+-
+Q   : What are the important objects in the current scene? Those objects will be considered for the future reasoning and drivi
+GT  : There is a silver sedan to the front of the ego vehicle, a traffic cone to the front right of the ego vehicle, a traffic cone to the back left of the  | label: None
+PRED: The important objects in the current scene are: / - A white car parked on the right side of the road. / - A black car parked on the left side of the road. / - A red and white construction fence. / - A blue and white sign on the right side of the road. / - A blue and white sign on the left side of the road. / - 
+READ: []
+-
+Q   : What are the important objects in the current scene? Those objects will be considered for the future reasoning and drivi
+GT  : There is a white van to the front of the ego vehicle, a white truck to the back of the ego vehicle, a black van to the back right of the ego vehicle,  | label: None
+PRED: Based on the provided images, the following objects are important and can be considered for future reasoning and driving decisions: /  / - **CAM_FRONT**: A white van is directly in front of the vehicle, with its brake lights illuminated. The road appears wet, and there are other vehicles and streetlight
+READ: []
+-
+
+######## P2
+Q   : What is the moving status of object <c5,CAM_FRONT,660.0,421.7>?
+GT  : Going ahead. | label: going_ahead
+PRED: The object <c5,CAM_FRONT,660.0,421.7> is a white bus. It is moving forward on the road.
+READ: going_ahead
+-
+Q   : What is the moving status of object <c1,CAM_FRONT,830.8,533.3>?
+GT  : Going ahead. | label: going_ahead
+PRED: The object <c1,CAM_FRONT,830.8,533.3> is moving.
+READ: going_ahead
+-
+Q   : What is the moving status of object <c2,CAM_BACK,1108.6,656.2>?
+GT  : Turn left. | label: turn_left
+PRED: The object <c2,CAM_BACK,1108.6,656.2> is stationary.
+READ: stopped
+-
+
+######## P2o
+Q   : What is the observed status of object <c1,CAM_BACK,1234.0,635.0>?
+GT  : Moving. | label: moving
+PRED: The object <c1,CAM_BACK,1234.0,635.0> is a car. It is parked on the right side of the road, near the curb.
+READ: stopped
+-
+Q   : What is the observed status of object <c1,CAM_FRONT,1235.0,476.7>?
+GT  : Moving. | label: moving
+PRED: The object <c1,CAM_FRONT,1235.0,476.7> is a white truck. It is currently stationary at the intersection, with its front facing the camera.
+READ: stopped
+-
+Q   : What is the observed status of object <c4,CAM_FRONT_RIGHT,355.8,457.5>?
+GT  : Moving. | label: moving
+PRED: The object <c4,CAM_FRONT_RIGHT,355.8,457.5> is a white barrier on the sidewalk.
+READ: None
+-
+
+######## P3
+Q   : What is the visual description of <c2,CAM_FRONT,383.3,460.0>?
+GT  : Blue truck. | label: truck
+PRED: A white truck is visible in the image, positioned on the left side of the road. It is partially obscured by a row of orange traffic cones. The truck appears to be in motion, as it is moving from the left side of the road towards the right. The truck has a large, rectangular cargo area and a visible 
+READ: truck
+-
+Q   : What is the visual description of <c1,CAM_BACK,898.3,560.8>?
+GT  : Black car. | label: car
+PRED: A black car is visible in the distance, driving on the road. It is located in the center of the image, and appears to be moving forward. The car is positioned in the middle of the road, and its headlights are on. The road is wet, indicating that it is raining. The car is surrounded by other vehicles
+READ: car
+-
+Q   : What is the visual description of <c2,CAM_FRONT,813.3,507.5>?
+GT  : White sedan. | label: car
+PRED: A white car is parked on the right side of the road, with a white van parked in front of it.
+READ: car
+-
+
+######## P4
+Q   : Are there parked cars to the back right of the ego car?
+GT  : Yes. | label: yes
+PRED: Yes, there are parked cars to the back right of the ego car.
+READ: yes
+-
+Q   : Are there moving pedestrians to the front left of the ego car?
+GT  : Yes. | label: yes
+PRED: No, there are no moving pedestrians to the front left of the ego car.
+READ: no
+-
+Q   : Are there barriers to the front left of the ego car?
+GT  : Yes. | label: yes
+PRED: Yes, there is a barrier to the front left of the ego car.
+READ: yes
+-
+
+######## P5
+Q   : What are objects to the back of the ego car?
+GT  : There are two cars behind the ego car. | label: car
+PRED: There are 3 objects to the back of the ego car: / - A white van / - A black car / - A white truck
+READ: ['car', 'truck']
+-
+Q   : What are objects to the back right of the ego car?
+GT  : There are two pedestrians to the back right of the ego car. | label: pedestrian
+PRED: <id,CAM_BACK_RIGHT,544,700,998,998>
+READ: []
+-
+Q   : What are objects to the back left of the ego car?
+GT  : There is one car and one bicycle to the back left of the ego car. | label: bicycle|car
+PRED: <id,CAM_BACK_LEFT,0,624>
+READ: []
+-
+
+######## P6
+Q   : What is the status of the pedestrians that are to the back left of the ego car?
+GT  : One of the pedestrians is standing, and three are moving. | label: moving
+PRED: The pedestrians to the back left of the ego car are standing on the sidewalk.
+READ: None
+-
+Q   : What is the status of the cars that are to the back of the ego car?
+GT  : Three cars are parked. | label: stopped
+PRED: The cars that are to the back of the ego car are parked.
+READ: stopped
+-
+Q   : What is the status of the trucks that are to the front left of the ego car?
+GT  : Many trucks are parked. | label: stopped
+PRED: The truck to the front left of the ego car is parked.
+READ: stopped
+-

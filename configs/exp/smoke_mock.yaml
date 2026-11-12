@@ -1,0 +1,12 @@
+# Pipeline smoke test on synthetic data with the MOCK noisy-oracle predictor. Not a result.
+_base_: [../data/perception.yaml]
+exp: smoke_mock
+paths:
+  drivelm_json: data/synthetic/drivelm/v1_1_train_nus.json
+  nusc_root: data/synthetic/nuscenes
+  nusc_version: v1.0-mini
+  image_root: data/synthetic/nuscenes
+  processed: data/synthetic/processed
+  runs_dir: runs_smoke
+data: {data_version: synth1, val_frac: 0.25, n_val_fixed: 500}
+model: {kind: mock}

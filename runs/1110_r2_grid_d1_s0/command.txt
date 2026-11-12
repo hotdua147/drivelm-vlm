@@ -1,0 +1,1 @@
+scripts/predict.py --config configs/exp/r2_grid.yaml

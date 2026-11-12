@@ -1,0 +1,269 @@
+{
+  "n": 700,
+  "n_by_qtype": {
+    "P5": 100,
+    "P1": 100,
+    "P2o": 100,
+    "P6": 100,
+    "P3": 100,
+    "P4": 100,
+    "P2": 100
+  },
+  "unanswered_qtypes": [],
+  "P1": {
+    "tau50": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "tau100": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "tau200": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "grounding_rate": null,
+  "hallucination_rate": null,
+  "n_pred_tags": 0,
+  "P1_by_camera_tau100": {
+    "front": 0.0,
+    "other": 0.0
+  },
+  "pred_tags_per_answer": 0.0,
+  "P2": {
+    "accuracy": 65.0,
+    "macro_f1": 20.06,
+    "balanced_accuracy": 23.81,
+    "n": 100,
+    "n_turn": 9,
+    "label_counts": {
+      "going_ahead": 91,
+      "turn_left": 3,
+      "turn_right": 6
+    },
+    "turn_recall": 0.0,
+    "turn_any_recall": 0.0,
+    "turn_precision": null,
+    "turn_any_precision": null,
+    "pred_turn_rate": 0.0
+  },
+  "P3": {
+    "category_accuracy": 68.54,
+    "n_scored": 89,
+    "category_accuracy_vs_nuscenes": 70.11
+  },
+  "P4": {
+    "accuracy": 62.0,
+    "balanced_accuracy": 59.32,
+    "n_scored": 100
+  },
+  "P2o": {
+    "accuracy": 24.0,
+    "macro_f1": 32.67,
+    "n_scored": 100
+  },
+  "P6": {
+    "accuracy": 16.0,
+    "macro_f1": 8.06,
+    "n_scored": 100
+  },
+  "P5": {
+    "precision": 75.68,
+    "recall": 12.73,
+    "f1": 21.79
+  },
+  "clean_subset": {
+    "P2": {
+      "accuracy": 63.74,
+      "macro_f1": 19.86,
+      "n": 91,
+      "dropped": 9
+    },
+    "P2o": {
+      "accuracy": 23.08,
+      "macro_f1": 31.73,
+      "n": 91,
+      "dropped": 9
+    },
+    "P4": {
+      "accuracy": 64.52,
+      "balanced_accuracy": 61.14,
+      "n": 93,
+      "dropped": 7
+    }
+  },
+  "parse_fail_rate": 16.71,
+  "distinct_answers": {
+    "P5": 9,
+    "P1": 1,
+    "P2o": 3,
+    "P6": 3,
+    "P3": 6,
+    "P4": 3,
+    "P2": 2
+  },
+  "subsets": {
+    "city=boston": {
+      "n": 59,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    },
+    "city=singapore": {
+      "n": 41,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    },
+    "condition=day": {
+      "n": 69,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    },
+    "condition=night": {
+      "n": 11,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    },
+    "condition=rain": {
+      "n": 20,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    }
+  },
+  "latency_s": {
+    "p50": 0.4613,
+    "p95": 3.5479
+  },
+  "peak_vram_gb": 4.12,
+  "image_tokens_mean": 588.0,
+  "ci95": {
+    "P1_f1_tau100": [
+      0.0,
+      0.0
+    ],
+    "P2_macro_f1": [
+      18.11,
+      26.49
+    ],
+    "P2_balanced_accuracy": [
+      20.35,
+      35.29
+    ],
+    "P3_category_accuracy": [
+      58.33,
+      78.5
+    ],
+    "P4_balanced_accuracy": [
+      48.22,
+      69.77
+    ],
+    "P2o_macro_f1": [
+      22.04,
+      43.51
+    ],
+    "P6_macro_f1": [
+      4.63,
+      13.8
+    ],
+    "P5_f1": [
+      15.25,
+      28.47
+    ]
+  },
+  "ci95_question": {
+    "P1_f1_tau100": [
+      0.0,
+      0.0
+    ],
+    "P2_macro_f1": [
+      18.21,
+      27.22
+    ],
+    "P2_balanced_accuracy": [
+      20.43,
+      36.46
+    ],
+    "P3_category_accuracy": [
+      59.55,
+      77.53
+    ],
+    "P4_balanced_accuracy": [
+      48.67,
+      70.73
+    ],
+    "P2o_macro_f1": [
+      22.09,
+      43.08
+    ],
+    "P6_macro_f1": [
+      5.11,
+      12.81
+    ],
+    "P5_f1": [
+      14.72,
+      28.91
+    ]
+  },
+  "ci95_meta": {
+    "method": "percentile bootstrap, resampling scenes (ci95) or questions (ci95_question)",
+    "B": 1000,
+    "seed": 0
+  },
+  "by_question_camera": {
+    "P3_category_accuracy": {
+      "front": 67.39,
+      "other": 69.77,
+      "n_front": 46,
+      "n_other": 43
+    },
+    "P4_balanced_accuracy": {
+      "front": 75.0,
+      "other": 59.39,
+      "n_front": 27,
+      "n_other": 73
+    },
+    "P2o_macro_f1": {
+      "front": 29.48,
+      "other": 33.73,
+      "n_front": 47,
+      "n_other": 53
+    },
+    "P6_macro_f1": {
+      "front": 0.0,
+      "other": 9.29,
+      "n_front": 22,
+      "n_other": 78
+    },
+    "P5_f1": {
+      "front": 15.62,
+      "other": 23.83,
+      "n_front": 22,
+      "n_other": 78
+    }
+  },
+  "warnings": [
+    "COLLAPSE: P2 has 2 distinct answers over 100 samples"
+  ],
+  "meta": {
+    "exp": "b2_zeroshot",
+    "model_kind": "qwen",
+    "data_version": "d1",
+    "run": "1110_b2_zeroshot_d1_s0",
+    "labels_refreshed": 0,
+    "eval_set": null,
+    "cameras": [
+      "CAM_FRONT_LEFT",
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_BACK_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_RIGHT"
+    ],
+    "mode": "separate",
+    "camera_names": true
+  }
+}

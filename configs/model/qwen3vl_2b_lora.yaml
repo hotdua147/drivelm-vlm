@@ -1,0 +1,27 @@
+model:
+  kind: qwen
+  model_id: Qwen/Qwen3-VL-2B-Instruct
+  min_pixels: 65536
+  max_pixels: 112896                    # 448*252
+  mode: separate                        # separate | grid | none
+  camera_names: true
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  train_vision: false
+train:
+  enabled: false
+  epochs: 1
+  lr: 2.0e-4
+  batch_size: 1
+  grad_accum: 16
+  max_train: 10000
+  warmup_ratio: 0.03
+  camera_dropout: 0.0
+  gradient_checkpointing: true
+  logging_steps: 20
+  sample_every: 500
+  save_steps: 1000
+predict:
+  max_new_tokens: 256

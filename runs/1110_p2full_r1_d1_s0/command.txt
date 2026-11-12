@@ -1,0 +1,1 @@
+scripts/predict.py --config configs/exp/p2full_r1.yaml

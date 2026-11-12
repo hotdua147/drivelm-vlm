@@ -1,0 +1,5 @@
+# Third seed of R1 (with r1_6cam = seed 0 and r1_seed1): run-to-run spread from 3 runs, not 1 difference.
+_base_: [r1_6cam.yaml]
+exp: r1_seed2
+seed: 2
+train: {enabled: true}   # explicit: `make run` greps this file for it

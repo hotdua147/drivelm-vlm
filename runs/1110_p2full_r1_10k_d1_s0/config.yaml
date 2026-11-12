@@ -1,0 +1,64 @@
+paths:
+  drivelm_json: data/raw/drivelm/v1_1_train_nus.json
+  nusc_root: data/raw/nuscenes
+  nusc_version: v1.0-trainval
+  image_root: data/raw/nuscenes
+  processed: data/processed
+  runs_dir: runs
+data:
+  categories:
+  - perception
+  cameras:
+  - CAM_FRONT_LEFT
+  - CAM_FRONT
+  - CAM_FRONT_RIGHT
+  - CAM_BACK_LEFT
+  - CAM_BACK
+  - CAM_BACK_RIGHT
+  val_frac: 0.1
+  seed: 0
+  n_val_fixed: 700
+  data_version: d1
+  cell:
+  - 448
+  - 252
+  thresholds: {}
+eval:
+  taus:
+  - 50
+  - 100
+  - 200
+  halluc_dist: 100
+seed: 0
+model:
+  kind: qwen
+  model_id: Qwen/Qwen3-VL-2B-Instruct
+  min_pixels: 65536
+  max_pixels: 112896
+  mode: separate
+  camera_names: true
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  train_vision: false
+train:
+  enabled: false
+  epochs: 1
+  lr: 0.0002
+  batch_size: 1
+  grad_accum: 16
+  max_train: 10000
+  warmup_ratio: 0.03
+  camera_dropout: 0.15
+  gradient_checkpointing: true
+  logging_steps: 20
+  sample_every: 500
+  save_steps: 1000
+predict:
+  max_new_tokens: 256
+exp: p2full_r1_10k
+checkpoint_from: r1_10k
+eval_set:
+  qtypes:
+  - P2

@@ -1,0 +1,6 @@
+# P2 on every val P2 question (1,153, ~100 turns) instead of the fixed 100
+_base_: [r1_6cam.yaml]
+exp: p2full_r1
+train: {enabled: false}
+checkpoint_from: r1_6cam
+eval_set: {qtypes: [P2]}

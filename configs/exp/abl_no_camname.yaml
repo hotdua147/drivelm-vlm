@@ -1,0 +1,5 @@
+_base_: [r1_6cam.yaml]
+exp: abl_no_camname
+train: {enabled: false}
+checkpoint_from: r1_6cam
+model: {camera_names: false}

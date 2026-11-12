@@ -1,0 +1,1 @@
+scripts/predict.py --config configs/exp/b0_prior.yaml

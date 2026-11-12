@@ -1,0 +1,3 @@
+_base_: [../data/perception.yaml]
+exp: b1_siglip
+model: {kind: siglip, model_id: google/siglip2-so400m-patch14-384, crop: 320}

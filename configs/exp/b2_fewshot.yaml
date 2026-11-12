@@ -1,0 +1,5 @@
+# Review question 10: zero-shot Qwen3-VL-2B shown 2 fixed training answers of the same question type
+# (text only) before each question. How much of R1's P1 gain is just learning the answer/tag format?
+_base_: [b2_zeroshot.yaml]
+exp: b2_fewshot
+model: {few_shot: 2}

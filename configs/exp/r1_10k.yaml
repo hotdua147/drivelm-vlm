@@ -1,0 +1,4 @@
+# Data-amount ablation: R1 with 10k instead of 40k training samples (same balanced sampling)
+_base_: [r1_6cam.yaml]
+exp: r1_10k
+train: {enabled: true, max_train: 10000}

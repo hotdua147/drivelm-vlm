@@ -1,0 +1,6 @@
+# Run-to-run variance: R1 exactly as r1_6cam (40k samples) but training seed 1.
+# The data split / fixed val keep data seed 0, so the val questions are identical.
+_base_: [r1_6cam.yaml]
+exp: r1_seed1
+seed: 1
+train: {enabled: true}   # explicit: `make run` greps this file for it

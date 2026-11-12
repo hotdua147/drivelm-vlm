@@ -1,0 +1,1 @@
+scripts/predict.py --config configs/exp/r1_6cam.yaml --set train.max_train=40000

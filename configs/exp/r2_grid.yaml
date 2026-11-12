@@ -1,0 +1,6 @@
+# One 3x2 grid image instead of 6 separate images. Same per-camera resolution as R1 (448x252 cells,
+# so the pixel budget is 6x R1's) and the same camera dropout: only the image layout differs.
+_base_: [../data/perception.yaml, ../model/qwen3vl_2b_lora.yaml]
+exp: r2_grid
+model: {mode: grid, max_pixels: 677376}
+train: {enabled: true, camera_dropout: 0.15, max_train: 40000}

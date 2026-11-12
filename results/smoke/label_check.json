@@ -1,0 +1,518 @@
+{
+  "passed": true,
+  "p4_best_variant": "parked_incl_stopped",
+  "p4_by_template": {
+    "parked vehicle.car": {
+      "n": 864,
+      "agree": 0.8681,
+      "drivelm_yes_nusc_no": 114,
+      "drivelm_no_nusc_yes": 0
+    },
+    "moving human.pedestrian": {
+      "n": 864,
+      "agree": 0.9954,
+      "drivelm_yes_nusc_no": 0,
+      "drivelm_no_nusc_yes": 4
+    }
+  },
+  "status_pairs_top": [
+    [
+      [
+        "Moving",
+        "vehicle.moving",
+        ">0.5"
+      ],
+      225
+    ],
+    [
+      [
+        "Stationary",
+        "vehicle.stopped",
+        "<=0.5"
+      ],
+      81
+    ],
+    [
+      [
+        "Stationary",
+        "vehicle.parked",
+        "<=0.5"
+      ],
+      68
+    ],
+    [
+      [
+        "Moving",
+        "pedestrian.moving",
+        ">0.5"
+      ],
+      68
+    ],
+    [
+      [
+        "Stationary",
+        "pedestrian.standing",
+        "<=0.5"
+      ],
+      55
+    ],
+    [
+      [
+        "Moving",
+        "cycle.with_rider",
+        ">0.5"
+      ],
+      43
+    ],
+    [
+      [
+        "Stationary",
+        "vehicle.moving",
+        ">0.5"
+      ],
+      14
+    ],
+    [
+      [
+        "Moving",
+        "vehicle.stopped",
+        "<=0.5"
+      ],
+      7
+    ],
+    [
+      [
+        "Moving",
+        "vehicle.parked",
+        "<=0.5"
+      ],
+      6
+    ],
+    [
+      [
+        "Stationary",
+        "pedestrian.moving",
+        ">0.5"
+      ],
+      5
+    ],
+    [
+      [
+        "Stationary",
+        "cycle.with_rider",
+        ">0.5"
+      ],
+      2
+    ],
+    [
+      [
+        "Moving",
+        "pedestrian.standing",
+        "<=0.5"
+      ],
+      2
+    ]
+  ],
+  "category_confusion_top": [],
+  "failures": [],
+  "thresholds": {
+    "min_sample_found_rate": 0.98,
+    "min_tag_valid_rate": 0.99,
+    "min_tag_link_rate": 0.8,
+    "min_status_agreement": 0.7
+  },
+  "rates": {
+    "sample_found_rate": 0.9931,
+    "tag_valid_rate": 1.0,
+    "tag_link_rate": 1.0,
+    "tag_link_iou_rate": 1.0,
+    "tag_link_inside_rate": 0.0,
+    "status_agreement": 0.9375,
+    "category_agreement": 1.0,
+    "p4_nuscenes_agreement_by_variant": {
+      "both": 0.6262,
+      "exact": 0.9317,
+      "parked_incl_stopped": 0.9977,
+      "with_neighbour_cams": 0.6343
+    },
+    "p4_nuscenes_agreement": 0.9977,
+    "tag_link_rate_by_category": {
+      "Pedestrian": 1.0,
+      "Vehicle": 1.0
+    }
+  },
+  "counts": {
+    "frames": 145,
+    "frames_found": 144,
+    "tags": 576,
+    "tags_cat:Vehicle": 446,
+    "linked_cat:Vehicle": 446,
+    "tags_valid": 576,
+    "tags_linked": 576,
+    "tags_linked_iou": 576,
+    "status_compared": 576,
+    "status_agree": 540,
+    "category_compared": 576,
+    "category_agree": 576,
+    "tags_cat:Pedestrian": 130,
+    "linked_cat:Pedestrian": 130,
+    "p4_compared:exact": 1728,
+    "p4_agree:exact": 1610,
+    "p4_compared:parked_incl_stopped": 1728,
+    "p4_agree:parked_incl_stopped": 1724,
+    "p4_compared:with_neighbour_cams": 1728,
+    "p4_agree:with_neighbour_cams": 1096,
+    "p4_compared:both": 1728,
+    "p4_agree:both": 1082,
+    "p4_unverifiable": 144
+  },
+  "question_types": {
+    "P1": 144,
+    "P2": 576,
+    "P2o": 576,
+    "P3": 576,
+    "other": 288,
+    "P5": 740,
+    "P6": 688,
+    "P4": 1872
+  },
+  "answer_distribution": {
+    "P2": {
+      "going_ahead": 333,
+      "stopped": 225,
+      "turn_left": 15,
+      "turn_right": 3
+    },
+    "P2o": {
+      "moving": 351,
+      "stopped": 165
+    },
+    "P3": {
+      "car": 271,
+      "pedestrian": 130,
+      "bicycle": 76,
+      "truck": 72,
+      "bus": 27
+    },
+    "P5": {
+      "car": 110,
+      "car|pedestrian": 70,
+      "pedestrian": 52,
+      "car|pedestrian|truck": 44,
+      "car|traffic_cone": 32,
+      "car|pedestrian|traffic_cone": 31,
+      "car|truck": 30,
+      "bicycle|car": 29,
+      "truck": 25,
+      "car|pedestrian|traffic_cone|truck": 23,
+      "bus|car": 19,
+      "traffic_cone": 18,
+      "bicycle|car|traffic_cone|truck": 16,
+      "bicycle|car|pedestrian|traffic_cone|truck": 15,
+      "pedestrian|truck": 15,
+      "pedestrian|traffic_cone|truck": 14,
+      "bicycle|traffic_cone": 13,
+      "bicycle|car|traffic_cone": 13,
+      "bicycle|car|pedestrian|traffic_cone": 13,
+      "bus|car|traffic_cone": 12,
+      "pedestrian|traffic_cone": 11,
+      "traffic_cone|truck": 10,
+      "bicycle|car|pedestrian": 9,
+      "bicycle": 9,
+      "bicycle|bus|pedestrian": 8,
+      "bus|car|pedestrian|traffic_cone": 8,
+      "bus|car|pedestrian": 8,
+      "bicycle|car|truck": 8,
+      "car|traffic_cone|truck": 8,
+      "bus|car|pedestrian|traffic_cone|truck": 7,
+      "bicycle|bus|car|pedestrian": 7,
+      "bicycle|bus|car|pedestrian|traffic_cone|truck": 6,
+      "bus": 6,
+      "bicycle|pedestrian": 5,
+      "bus|traffic_cone": 5,
+      "bicycle|pedestrian|traffic_cone": 4,
+      "bus|pedestrian": 4,
+      "bicycle|bus|car": 4,
+      "bus|pedestrian|traffic_cone": 4,
+      "bicycle|bus|car|traffic_cone|truck": 3,
+      "bicycle|pedestrian|truck": 3,
+      "bicycle|bus|car|traffic_cone": 2,
+      "bicycle|bus|car|pedestrian|truck": 2,
+      "bicycle|car|pedestrian|truck": 2,
+      "bus|car|pedestrian|truck": 1,
+      "bus|car|truck": 1,
+      "bus|truck": 1
+    },
+    "P6": {
+      "moving": 425,
+      "stopped": 189
+    },
+    "P4": {
+      "no": 1351,
+      "yes": 521
+    }
+  },
+  "tag_cameras": {
+    "CAM_FRONT": 94,
+    "CAM_BACK_RIGHT": 76,
+    "CAM_BACK": 130,
+    "CAM_FRONT_LEFT": 124,
+    "CAM_BACK_LEFT": 80,
+    "CAM_FRONT_RIGHT": 72
+  },
+  "top_unmatched_questions": {
+    "What is the relative positioning of the important objects in the current scene?": 144,
+    "Please describe the current scene.": 144
+  },
+  "examples": {
+    "p4_mismatch": [
+      {
+        "sample_token": "f2686baa971c702d5bf49c04ac642b4c",
+        "q": "Are there parked cars to the back of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "9efee464da90f534a23d4c9de456697c",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "9efee464da90f534a23d4c9de456697c",
+        "q": "Are there parked cars to the front right of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "635518f74f6fa985b732d46f21e15094",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "635518f74f6fa985b732d46f21e15094",
+        "q": "Are there parked cars to the front right of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "3d4a5d5128fafd04559b5975b2d650af",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "3d4a5d5128fafd04559b5975b2d650af",
+        "q": "Are there parked cars to the front right of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "4a294067dc66a27b6a325333116e8a64",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "92f078b8226962278513d91e48622a67",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "88083ebc35d4cd35a08c3a0085e74250",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "88083ebc35d4cd35a08c3a0085e74250",
+        "q": "Are there parked cars to the back of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "a274c0d7f4a5cc36692a7bce1af55c26",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "4ad12b4c47534952c9c5fef1e76f8a76",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "4ad12b4c47534952c9c5fef1e76f8a76",
+        "q": "Are there parked cars to the back of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "b47a5dcecf709452ce8c037ee51c0cdb",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "2a1bc11230331476f53fc3dd19b53b7f",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "f0bd7405650dd400a27ee80d6d3f4b37",
+        "q": "Are there parked cars to the front left of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "f0bd7405650dd400a27ee80d6d3f4b37",
+        "q": "Are there parked cars to the front of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "f0bd7405650dd400a27ee80d6d3f4b37",
+        "q": "Are there parked cars to the back left of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      },
+      {
+        "sample_token": "ef8dff9bfae3fcee7636efd98376ffa8",
+        "q": "Are there parked cars to the back of the ego car?",
+        "drivelm": "yes",
+        "nuscenes": "no"
+      }
+    ],
+    "frame_not_in_nuscenes": [
+      {
+        "sample_token": "deadbeefdeadbeefdeadbeefdeadbeef"
+      }
+    ],
+    "status_mismatch": [
+      {
+        "sample_token": "a274c0d7f4a5cc36692a7bce1af55c26",
+        "tag": "<c1,CAM_BACK,1590.7,648.6>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "c74f11cdbdce29ef674610eb8b279c29",
+        "tag": "<c3,CAM_BACK,431.6,450.0>",
+        "drivelm": "moving",
+        "nuscenes": "stopped"
+      },
+      {
+        "sample_token": "4ad12b4c47534952c9c5fef1e76f8a76",
+        "tag": "<c4,CAM_BACK,1596.3,528.1>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "be7929653c9a923672bbe7b392b95731",
+        "tag": "<c2,CAM_BACK_LEFT,121.9,520.5>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "be7929653c9a923672bbe7b392b95731",
+        "tag": "<c4,CAM_FRONT_RIGHT,12.6,432.8>",
+        "drivelm": "moving",
+        "nuscenes": "stopped"
+      },
+      {
+        "sample_token": "824734dfdd1f8e30731c877ab6bca2a2",
+        "tag": "<c3,CAM_BACK,1548.4,506.1>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "b47a5dcecf709452ce8c037ee51c0cdb",
+        "tag": "<c4,CAM_FRONT_RIGHT,202.2,425.0>",
+        "drivelm": "moving",
+        "nuscenes": "stopped"
+      },
+      {
+        "sample_token": "2a1bc11230331476f53fc3dd19b53b7f",
+        "tag": "<c3,CAM_FRONT,554.1,535.9>",
+        "drivelm": "moving",
+        "nuscenes": "stopped"
+      },
+      {
+        "sample_token": "76fe579f6382f3b5f9adf8c56247b40d",
+        "tag": "<c4,CAM_BACK_LEFT,280.6,506.7>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "3b8f5fc77c96eefa4fab2ad88091a21d",
+        "tag": "<c1,CAM_BACK,1583.4,658.0>",
+        "drivelm": "moving",
+        "nuscenes": "stopped"
+      },
+      {
+        "sample_token": "13f333af31660e65ecdc1273f0dfb9ca",
+        "tag": "<c4,CAM_FRONT,39.2,509.7>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "96561c9429efcdfc81992dc5d7488a76",
+        "tag": "<c3,CAM_FRONT,15.5,515.5>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "7c261cc8a94f30d62f595bc0dad16c2b",
+        "tag": "<c4,CAM_FRONT,938.4,533.1>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "9a5413ddcb345f2366871fab4ee6436f",
+        "tag": "<c2,CAM_FRONT_RIGHT,7.0,541.2>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "c0fa5031326e1983f6bd16ac4ab50701",
+        "tag": "<c2,CAM_FRONT_LEFT,1135.6,450.0>",
+        "drivelm": "moving",
+        "nuscenes": "stopped"
+      },
+      {
+        "sample_token": "c0d46663cfe117131a0bcd0f827589ea",
+        "tag": "<c2,CAM_FRONT_RIGHT,969.9,545.1>",
+        "drivelm": "moving",
+        "nuscenes": "stopped"
+      },
+      {
+        "sample_token": "493b1112868a9123aa4b938efb6f6d23",
+        "tag": "<c2,CAM_FRONT_LEFT,1167.8,570.8>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "f28faeb01654012d596888410df5d972",
+        "tag": "<c2,CAM_BACK_RIGHT,96.4,450.0>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "0f46cf06f960229de1968f377781ea37",
+        "tag": "<c1,CAM_FRONT,166.6,450.0>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      },
+      {
+        "sample_token": "5d29a600bde2ae271f3fd2cd335a1b7b",
+        "tag": "<c1,CAM_FRONT_LEFT,165.9,450.0>",
+        "drivelm": "stopped",
+        "nuscenes": "moving"
+      }
+    ]
+  }
+}

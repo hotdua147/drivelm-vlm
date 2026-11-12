@@ -1,0 +1,6 @@
+# Blind fine-tuning baseline: exactly R1 (40k samples, same LoRA, same steps) but NO images.
+# Separates "learned the question prior / answer format" from "uses the images".
+_base_: [r1_6cam.yaml]
+exp: r1_textonly
+model: {mode: none}
+train: {enabled: true, camera_dropout: 0.0}

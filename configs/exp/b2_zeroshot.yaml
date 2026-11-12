@@ -1,0 +1,2 @@
+_base_: [../data/perception.yaml, ../model/qwen3vl_2b_lora.yaml]
+exp: b2_zeroshot

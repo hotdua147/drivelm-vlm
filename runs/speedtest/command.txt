@@ -1,0 +1,1 @@
+scripts/train.py --config configs/exp/r2_grid.yaml --max_train 320 --run_id speedtest --set train.batch_size=2 train.grad_accum=8

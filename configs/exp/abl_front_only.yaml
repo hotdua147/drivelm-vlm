@@ -1,0 +1,6 @@
+# evaluation-time ablation on the R1 checkpoint (no training)
+_base_: [r1_6cam.yaml]
+exp: abl_front_only
+train: {enabled: false}
+checkpoint_from: r1_6cam
+ablation: {cameras: [CAM_FRONT]}

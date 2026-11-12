@@ -1,0 +1,1 @@
+scripts/predict.py --config configs/exp/r2_grid.yaml --set checkpoint_from=r2smoke --max_eval 10 --run_id r2_predict_test

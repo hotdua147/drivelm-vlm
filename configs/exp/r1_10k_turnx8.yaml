@@ -1,0 +1,8 @@
+# Same as r1_10k, but P2 questions whose answer is a turn are repeated x8 before sampling
+_base_: [r1_6cam.yaml]
+exp: r1_10k_turnx8
+train:
+  enabled: true
+  max_train: 10000
+  oversample:
+    - {qtype: P2, labels: [turn_left, turn_right], factor: 8}

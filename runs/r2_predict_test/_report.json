@@ -1,0 +1,184 @@
+{
+  "n": 10,
+  "n_by_qtype": {
+    "P5": 1,
+    "P1": 2,
+    "P2o": 3,
+    "P6": 2,
+    "P3": 1,
+    "P4": 1
+  },
+  "unanswered_qtypes": [],
+  "P1": {
+    "tau50": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "tau100": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "tau200": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "grounding_rate": null,
+  "hallucination_rate": null,
+  "n_pred_tags": 0,
+  "P1_by_camera_tau100": {
+    "front": 0.0,
+    "other": 0.0
+  },
+  "pred_tags_per_answer": 0.0,
+  "P3": {
+    "category_accuracy": 100.0,
+    "n_scored": 1,
+    "category_accuracy_vs_nuscenes": 100.0
+  },
+  "P4": {
+    "accuracy": 100.0,
+    "balanced_accuracy": 100.0,
+    "n_scored": 1
+  },
+  "P2o": {
+    "accuracy": 100.0,
+    "macro_f1": 100.0,
+    "n_scored": 3
+  },
+  "P6": {
+    "accuracy": 50.0,
+    "macro_f1": 50.0,
+    "n_scored": 2
+  },
+  "P5": {
+    "precision": 100.0,
+    "recall": 100.0,
+    "f1": 100.0
+  },
+  "clean_subset": {},
+  "parse_fail_rate": 10.0,
+  "distinct_answers": {
+    "P5": 1,
+    "P1": 1,
+    "P2o": 1,
+    "P6": 2,
+    "P3": 1,
+    "P4": 1
+  },
+  "subsets": {
+    "city=boston": {
+      "n": 1,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    },
+    "city=singapore": {
+      "n": 1,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    },
+    "condition=day": {
+      "n": 1,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    },
+    "condition=rain": {
+      "n": 1,
+      "P1_f1_tau100": 0.0,
+      "hallucination_rate": null
+    }
+  },
+  "latency_s": {
+    "p50": 0.2597,
+    "p95": 6.3246
+  },
+  "peak_vram_gb": 4.23,
+  "image_tokens_mean": 630.0,
+  "ci95": {
+    "P1_f1_tau100": [
+      0.0,
+      0.0
+    ],
+    "P2o_macro_f1": [
+      100.0,
+      100.0
+    ],
+    "P6_macro_f1": [
+      0.0,
+      100.0
+    ]
+  },
+  "ci95_question": {
+    "P1_f1_tau100": [
+      0.0,
+      0.0
+    ],
+    "P2o_macro_f1": [
+      100.0,
+      100.0
+    ],
+    "P6_macro_f1": [
+      0.0,
+      100.0
+    ]
+  },
+  "ci95_meta": {
+    "method": "percentile bootstrap, resampling scenes (ci95) or questions (ci95_question)",
+    "B": 1000,
+    "seed": 0
+  },
+  "by_question_camera": {
+    "P3_category_accuracy": {
+      "front": 100.0,
+      "other": null,
+      "n_front": 1,
+      "n_other": 0
+    },
+    "P4_balanced_accuracy": {
+      "front": null,
+      "other": 100.0,
+      "n_front": 0,
+      "n_other": 1
+    },
+    "P2o_macro_f1": {
+      "front": 100.0,
+      "other": 100.0,
+      "n_front": 1,
+      "n_other": 2
+    },
+    "P6_macro_f1": {
+      "front": null,
+      "other": 50.0,
+      "n_front": 0,
+      "n_other": 2
+    },
+    "P5_f1": {
+      "front": null,
+      "other": 100.0,
+      "n_front": 0,
+      "n_other": 1
+    }
+  },
+  "warnings": [],
+  "meta": {
+    "exp": "r2_grid",
+    "model_kind": "qwen",
+    "data_version": "d1",
+    "run": "r2_predict_test",
+    "labels_refreshed": 0,
+    "eval_set": null,
+    "cameras": [
+      "CAM_FRONT_LEFT",
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_BACK_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_RIGHT"
+    ],
+    "mode": "grid",
+    "camera_names": true
+  }
+}

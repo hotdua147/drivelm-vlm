@@ -1,0 +1,63 @@
+
+=== 1. STATUS agreement by nuScenes mapping
+  old                89.5%  (n=15231)
+  strict             89.7%  (n=15231)
+  stopped_as_moving  79.8%  (n=15231)
+  top (DriveLM Status, nuScenes attribute, speed) pairs:
+    6081 ('Moving', 'vehicle.moving', '>0.5')
+    3228 ('Stationary', 'vehicle.parked', '<=0.5')
+    1813 ('Stationary', 'vehicle.stopped', '<=0.5')
+    1328 ('Moving', 'pedestrian.moving', '>0.5')
+     383 ('Stationary', 'vehicle.moving', '>0.5')
+     360 ('Stationary', 'vehicle.moving', '<=0.5')
+     303 ('Stationary', 'pedestrian.standing', '<=0.5')
+     282 ('Moving', 'vehicle.stopped', '<=0.5')
+     245 ('Moving', 'vehicle.parked', '<=0.5')
+     231 ('Moving', 'vehicle.moving', '<=0.5')
+     214 ('Moving', 'cycle.with_rider', '>0.5')
+     143 ('Stationary', 'cycle.without_rider', '<=0.5')
+      66 ('Moving', 'pedestrian.standing', '<=0.5')
+      65 ('Stationary', 'pedestrian.moving', '<=0.5')
+
+=== 2. CATEGORY: top mismatches (DriveLM text group -> nuScenes category)
+     581 truck           -> vehicle.car                         e.g. Vehicle | White van.
+     324 car             -> vehicle.truck                       e.g. Vehicle | White SUV.
+     154 pedestrian      -> vehicle.motorcycle                  e.g. Cycle | Person riding a motorcycle.
+      97 car             -> vehicle.bus.rigid                   e.g. Vehicle | White commercial vehicle.
+      85 pedestrian      -> vehicle.bicycle                     e.g. Cycle | Person riding a bicycle.
+      58 truck           -> vehicle.bus.rigid                   e.g. Vehicle | White truck.
+      40 car             -> vehicle.trailer                     e.g. Vehicle | White sedan.
+      26 car             -> vehicle.construction                e.g. Vehicle | Orange exotic car.
+      12 car             -> vehicle.motorcycle                  e.g. Vehicle | White electric car.
+      11 pedestrian      -> vehicle.car                         e.g. Pedestrian | Still pedestrian.
+      11 bus             -> vehicle.truck                       e.g. Vehicle | Black bus.
+  agreement without traffic elements: 90.3% (n=14979)
+
+=== 3. OTHERS not linked (description, count)
+      7 Street lamp.
+      5 Streetlight.
+      3 Cannot see clearly.
+      3 Unclear.
+      2 Unable to confirm.
+      2 White wall.
+      1 Lamp post.
+      1 Yellow and blue billboard.
+
+=== 4. P4 agreement with nuScenes, by box filter
+  all              89.9%  (n=42145)
+  vis>=2           84.6%  (n=42145)
+  vis>=2,h>=30px   83.0%  (n=42145)
+  vis>=3,h>=50px   75.0%  (n=42145)
+  by template, counts DriveLM/nuScenes (filter: all):
+  parked car                   n=  7661  agree= 86.4%  yes/no= 1002  no/yes=   37
+  moving car                   n=  5346  agree= 83.7%  yes/no=  826  no/yes=   47
+  parked truck                 n=  5167  agree= 83.1%  yes/no=  520  no/yes=  353
+  moving pedestrian            n=  4954  agree= 95.1%  yes/no=  209  no/yes=   36
+  moving truck                 n=  3574  agree= 83.7%  yes/no=  405  no/yes=  177
+  - barrier                    n=  3507  agree= 98.9%  yes/no=   21  no/yes=   17
+  - traffic_cone               n=  3506  agree= 97.4%  yes/no=   62  no/yes=   29
+  standing pedestrian          n=  2557  agree= 90.1%  yes/no=  224  no/yes=   29
+  moving bus                   n=  1103  agree= 95.6%  yes/no=   42  no/yes=    7
+  without_rider bicycle        n=  1080  agree= 95.8%  yes/no=   41  no/yes=    4
+  without_rider motorcycle     n=  1068  agree= 93.2%  yes/no=   67  no/yes=    6
+  - bus                        n=   960  agree= 95.6%  yes/no=    1  no/yes=   41

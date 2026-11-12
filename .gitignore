@@ -1,0 +1,23 @@
+# data: never committed (DriveLM CC BY-NC-SA 4.0 and nuScenes terms; download it yourself, see README)
+data/raw/
+data/processed/
+data/synthetic/
+
+# runs: keep only the small, licence-free files (metrics, merged config, command, commit);
+# predictions contain DriveLM question text, adapters are large
+runs/*/*
+!runs/*/_report.json
+!runs/*/config.yaml
+!runs/*/command.txt
+!runs/*/git_sha.txt
+runs_smoke/
+
+# logs and caches
+*.log
+nohup.out
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/

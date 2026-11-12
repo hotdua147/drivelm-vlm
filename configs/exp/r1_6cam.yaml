@@ -1,0 +1,4 @@
+_base_: [../data/perception.yaml, ../model/qwen3vl_2b_lora.yaml]
+exp: r1_6cam
+model: {mode: separate}
+train: {enabled: true, camera_dropout: 0.15, max_train: 40000}

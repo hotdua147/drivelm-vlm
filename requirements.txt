@@ -1,0 +1,14 @@
+# Data pipeline, evaluation, tests (CPU, verified)
+numpy>=1.26
+scipy>=1.11
+pillow>=10.0
+pyyaml>=6.0
+pytest>=8.0
+# GPU part (Qwen3-VL needs a transformers release that ships Qwen3-VL; pin the exact version you test with)
+torch>=2.4
+transformers>=4.57   # 5.x supported (tested API: dtype=, processor pixel budget via compat.py)
+peft>=0.13
+accelerate>=1.0
+tensorboard
+# optional: cross-check projections against the official devkit on a few frames
+# nuscenes-devkit

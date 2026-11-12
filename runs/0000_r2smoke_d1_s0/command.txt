@@ -1,0 +1,1 @@
+scripts/train.py --config configs/exp/r2_grid.yaml --max_train 160 --run_id 0000_r2smoke_d1_s0

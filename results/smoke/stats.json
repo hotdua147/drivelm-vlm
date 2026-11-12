@@ -1,0 +1,56 @@
+{
+  "data_version": "synth1",
+  "n_rows": {
+    "train": 4336,
+    "val": 1124
+  },
+  "n_scenes": {
+    "train": 19,
+    "val": 5
+  },
+  "qtype": {
+    "train": {
+      "P1": 114,
+      "P2": 456,
+      "P2o": 456,
+      "P3": 456,
+      "other": 228,
+      "P5": 592,
+      "P6": 552,
+      "P4": 1482
+    },
+    "val": {
+      "P1": 30,
+      "P2": 120,
+      "P2o": 120,
+      "P3": 120,
+      "other": 60,
+      "P5": 148,
+      "P4": 390,
+      "P6": 136
+    }
+  },
+  "city": {
+    "train": {
+      "boston": 2040,
+      "singapore": 2296
+    },
+    "val": {
+      "boston": 660,
+      "singapore": 464
+    }
+  },
+  "condition": {
+    "train": {
+      "day": 2276,
+      "night": 917,
+      "rain": 1143
+    },
+    "val": {
+      "rain": 224,
+      "night": 464,
+      "day": 436
+    }
+  },
+  "n_val_fixed": 456
+}

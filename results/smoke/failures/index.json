@@ -1,0 +1,62 @@
+[
+ {
+  "file": "00_d48a5ae045ade3c0413eab4163b67b1d_perc_00.jpg",
+  "id": "d48a5ae045ade3c0413eab4163b67b1d_perc_00",
+  "missed": 1,
+  "extra": 1,
+  "hallucinated": 1,
+  "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+  "answer": "There is a cyclist in silver to the back left of the ego vehicle, a pedestrian in red to the back left of the ego vehicle, a pedestrian in black to the back of the ego vehicle, a black truck to the back of the ego vehicle. The IDs of these objects are <c1,CAM_BACK_LEFT,778.1,791.5>, <c2,CAM_BACK_LEFT,282.5,540.7>, <c3,CAM_BACK,1113.3,511.3>, <c4,CAM_BACK,1545.7,450.0>.",
+  "prediction": "The important objects are <c1,CAM_BACK_LEFT,851.6,824.1>, <c2,CAM_BACK_LEFT,256.8,480.1>, <c4,CAM_BACK,1543.5,446.0>, <c12,CAM_FRONT,1599.5,261.9>."
+ },
+ {
+  "file": "01_07f82dcafc84d80373fa96135fb91518_perc_00.jpg",
+  "id": "07f82dcafc84d80373fa96135fb91518_perc_00",
+  "missed": 0,
+  "extra": 1,
+  "hallucinated": 1,
+  "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+  "answer": "There is a pedestrian in black to the front left of the ego vehicle, a blue sedan to the front left of the ego vehicle, a black truck to the front left of the ego vehicle, a pedestrian in red to the front left of the ego vehicle. The IDs of these objects are <c1,CAM_FRONT_LEFT,1000.1,630.5>, <c2,CAM_FRONT_LEFT,116.6,568.8>, <c3,CAM_FRONT_LEFT,220.2,450.0>, <c4,CAM_FRONT_LEFT,956.9,514.5>.",
+  "prediction": "The important objects are <c1,CAM_FRONT_LEFT,995.3,702.7>, <c2,CAM_FRONT_LEFT,110.2,566.8>, <c3,CAM_FRONT_LEFT,212.6,410.4>, <c4,CAM_FRONT_LEFT,983.8,461.5>, <c13,CAM_BACK,1324.9,99.9>."
+ },
+ {
+  "file": "02_08fbfe11f54e888981acd529a0641fcb_perc_00.jpg",
+  "id": "08fbfe11f54e888981acd529a0641fcb_perc_00",
+  "missed": 0,
+  "extra": 1,
+  "hallucinated": 1,
+  "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+  "answer": "There is a black sedan to the back right of the ego vehicle, a red bus to the front right of the ego vehicle, a white sedan to the back right of the ego vehicle, a black sedan to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK_RIGHT,292.1,653.7>, <c2,CAM_FRONT_RIGHT,1139.6,450.0>, <c3,CAM_BACK_RIGHT,133.9,557.2>, <c4,CAM_FRONT,114.9,588.1>.",
+  "prediction": "The important objects are <c1,CAM_BACK_RIGHT,260.6,644.1>, <c2,CAM_FRONT_RIGHT,1199.6,488.9>, <c3,CAM_BACK_RIGHT,121.7,584.4>, <c4,CAM_FRONT,144.9,656.0>, <c13,CAM_BACK,762.4,26.9>."
+ },
+ {
+  "file": "03_1186da5b0bb4a483e9b6c5fcdb4fa21f_perc_00.jpg",
+  "id": "1186da5b0bb4a483e9b6c5fcdb4fa21f_perc_00",
+  "missed": 2,
+  "extra": 1,
+  "hallucinated": 0,
+  "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+  "answer": "There is a black sedan to the back of the ego vehicle, a cyclist in black to the front of the ego vehicle, a silver sedan to the back of the ego vehicle, a red truck to the front of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,517.4,571.0>, <c2,CAM_FRONT,897.1,587.4>, <c3,CAM_BACK,1425.8,540.0>, <c4,CAM_FRONT,575.3,450.0>.",
+  "prediction": "The important objects are <c1,CAM_BACK,618.4,584.8>, <c2,CAM_FRONT,905.3,606.3>, <c3,CAM_BACK,1443.4,609.7>."
+ },
+ {
+  "file": "04_12ce40a3c0f7cb467d9c104f3886c62e_perc_00.jpg",
+  "id": "12ce40a3c0f7cb467d9c104f3886c62e_perc_00",
+  "missed": 2,
+  "extra": 1,
+  "hallucinated": 0,
+  "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+  "answer": "There is a black sedan to the back of the ego vehicle, a cyclist in black to the front of the ego vehicle, a silver sedan to the back of the ego vehicle, a silver sedan to the front right of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,350.7,642.4>, <c2,CAM_FRONT,876.4,558.1>, <c3,CAM_BACK,1333.6,526.8>, <c4,CAM_FRONT_RIGHT,43.5,502.4>.",
+  "prediction": "The important objects are <c2,CAM_FRONT,897.6,546.2>, <c3,CAM_BACK,1284.9,434.6>, <c4,CAM_FRONT_RIGHT,99.6,523.8>."
+ },
+ {
+  "file": "05_dddfc6481840941954135521fcc2a98e_perc_00.jpg",
+  "id": "dddfc6481840941954135521fcc2a98e_perc_00",
+  "missed": 0,
+  "extra": 1,
+  "hallucinated": 1,
+  "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+  "answer": "There is a pedestrian in black to the back of the ego vehicle, a cyclist in silver to the front left of the ego vehicle, a pedestrian in red to the front left of the ego vehicle, a blue sedan to the back left of the ego vehicle. The IDs of these objects are <c1,CAM_BACK,1550.2,626.6>, <c2,CAM_FRONT_LEFT,1537.3,632.2>, <c3,CAM_FRONT_LEFT,123.6,560.2>, <c4,CAM_BACK_LEFT,24.9,531.1>.",
+  "prediction": "The important objects are <c1,CAM_BACK,1598.5,605.4>, <c2,CAM_FRONT_LEFT,1475.0,636.0>, <c3,CAM_FRONT_LEFT,130.4,590.9>, <c4,CAM_BACK_LEFT,47.9,537.6>, <c13,CAM_FRONT,224.7,236.0>."
+ }
+]

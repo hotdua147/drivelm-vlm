@@ -1,0 +1,1 @@
+scripts/predict.py --config configs/exp/abl_front_only.yaml

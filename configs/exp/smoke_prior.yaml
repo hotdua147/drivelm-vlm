@@ -1,0 +1,3 @@
+_base_: [smoke_mock.yaml]
+exp: smoke_prior
+model: {kind: prior}

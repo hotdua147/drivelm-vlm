@@ -1,0 +1,145 @@
+{
+  "n": 700,
+  "n_by_qtype": {
+    "P5": 100,
+    "P1": 100,
+    "P2o": 100,
+    "P6": 100,
+    "P3": 100,
+    "P4": 100,
+    "P2": 100
+  },
+  "unanswered_qtypes": [
+    "P1",
+    "P4",
+    "P5",
+    "P6"
+  ],
+  "P2": {
+    "accuracy": 29.0,
+    "macro_f1": 13.33,
+    "balanced_accuracy": 21.37,
+    "n": 100,
+    "n_turn": 9,
+    "label_counts": {
+      "going_ahead": 91,
+      "turn_left": 3,
+      "turn_right": 6
+    },
+    "turn_recall": 11.11,
+    "turn_any_recall": 22.22,
+    "turn_precision": 3.23,
+    "turn_any_precision": 6.45,
+    "pred_turn_rate": 31.0
+  },
+  "P3": {
+    "category_accuracy": 73.03,
+    "n_scored": 89,
+    "category_accuracy_vs_nuscenes": 73.56
+  },
+  "P2o": {
+    "accuracy": 42.0,
+    "macro_f1": 37.8,
+    "n_scored": 100
+  },
+  "clean_subset": {
+    "P2": {
+      "accuracy": 30.77,
+      "macro_f1": 14.13,
+      "n": 91,
+      "dropped": 9
+    },
+    "P2o": {
+      "accuracy": 42.86,
+      "macro_f1": 38.96,
+      "n": 91,
+      "dropped": 9
+    }
+  },
+  "parse_fail_rate": 0.0,
+  "distinct_answers": {
+    "P2o": 2,
+    "P3": 7,
+    "P2": 4
+  },
+  "subsets": {},
+  "latency_s": {
+    "p50": 0.0325,
+    "p95": 0.0428
+  },
+  "peak_vram_gb": 2.17,
+  "ci95": {
+    "P2_macro_f1": [
+      9.43,
+      17.64
+    ],
+    "P2_balanced_accuracy": [
+      8.43,
+      43.51
+    ],
+    "P3_category_accuracy": [
+      64.15,
+      81.18
+    ],
+    "P2o_macro_f1": [
+      27.98,
+      48.36
+    ]
+  },
+  "ci95_question": {
+    "P2_macro_f1": [
+      9.38,
+      18.12
+    ],
+    "P2_balanced_accuracy": [
+      8.14,
+      43.86
+    ],
+    "P3_category_accuracy": [
+      64.04,
+      80.9
+    ],
+    "P2o_macro_f1": [
+      29.03,
+      47.15
+    ]
+  },
+  "ci95_meta": {
+    "method": "percentile bootstrap, resampling scenes (ci95) or questions (ci95_question)",
+    "B": 1000,
+    "seed": 0
+  },
+  "by_question_camera": {
+    "P3_category_accuracy": {
+      "front": 65.22,
+      "other": 81.4,
+      "n_front": 46,
+      "n_other": 43
+    },
+    "P2o_macro_f1": {
+      "front": 36.97,
+      "other": 38.47,
+      "n_front": 47,
+      "n_other": 53
+    }
+  },
+  "warnings": [],
+  "meta": {
+    "exp": "b1_siglip",
+    "model_kind": "siglip",
+    "data_version": "d1",
+    "run": "1110_b1_siglip_d1_s0",
+    "labels_refreshed": 0,
+    "eval_set": null,
+    "cameras": [
+      "CAM_FRONT_LEFT",
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_BACK_LEFT",
+      "CAM_BACK",
+      "CAM_BACK_RIGHT"
+    ],
+    "mode": null,
+    "camera_names": true
+  }
+}
