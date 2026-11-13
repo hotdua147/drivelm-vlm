@@ -16,7 +16,7 @@ reference text. Phase 1 (perception) of an end-to-end driving project; trained o
 | B2: Qwen3-VL-2B zero-shot | 0.0 | – | 32.7 | 68.5 | 59.3 | 21.8 | 8.1 | 0.46 s |
 | B2 + 2 example answers (few-shot) | 3.3 | 54.6% | 35.9 | 60.7 | 63.0 | 64.0 | 13.5 | 0.21 s |
 | LoRA, same recipe, **no images** | 19.7 | 19.0% | 61.8 | 70.8 | 71.7 | 59.2 | 34.6 | 0.10 s |
-| **R1: LoRA, 6 named camera images** (seed 0) | **55.0** | 5.4% | **80.9** | **91.0** | 80.8 | **79.7** | **53.6** | 0.22 s |
+| **R1: LoRA, 6 named camera images** (seed 0) | **55.0** | 5.4% | 80.9 | **91.0** | 80.8 | **79.7** | **53.6** | 0.22 s |
 | R1 seeds 1 / 2 | 54.9 / 54.2 | 4.8 / 6.8% | 82.4 / 82.2 | 89.9 / 88.8 | 80.0 / 81.5 | 79.3 / 77.1 | 55.4 / 52.7 | 0.23 s |
 | R2: LoRA, one 3x2 grid image | 54.9 | 5.7% | 79.3 | 84.3 | 77.3 | 76.6 | 47.0 | 0.24 s |
 
